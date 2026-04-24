@@ -1,9 +1,21 @@
-# Example Mod
+# RegionsMod
 
-## Setup
+Fabric minigame mod for Minecraft 1.21.11. Four asymmetric nations compete on a shared map. Dormant by default. A game starts when an admin places a `[Nations]` sign and enough players right-click to join.
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+## Docs
+
+Full gameplay design and admin reference: <https://chrisatwell27.github.io/RegionsMod/>
+
+## Build
+
+Requires JDK 21.
+
+```bash
+./gradlew build
+```
+
+Jar output: `build/libs/regionsmod-<version>.jar`
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+See `LICENSE`.
