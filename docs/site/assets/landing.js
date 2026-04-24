@@ -285,8 +285,14 @@ const CLASSES = {
 
 const classTabs = document.getElementById('class-tabs');
 const classGrid = document.getElementById('class-grid');
+const classFullLink = document.getElementById('class-full-link');
+const TEAM_LABELS = { ocean: 'Ocean', nether: 'Nether', plains: 'Plains', mountain: 'Mountain' };
 function renderClasses(team) {
   classTabs.querySelectorAll('button').forEach(b => b.setAttribute('aria-selected', b.dataset.team === team ? 'true' : 'false'));
+  if (classFullLink) {
+    classFullLink.href = `classes/${team}-classes.html`;
+    classFullLink.textContent = `Full ${TEAM_LABELS[team]} classes page ▸`;
+  }
   classGrid.innerHTML = '';
   CLASSES[team].forEach(c => {
     const card = document.createElement('div');

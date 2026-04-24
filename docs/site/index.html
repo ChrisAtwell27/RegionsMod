@@ -366,6 +366,20 @@
   }
 
   /* ---- Class showcase ---- */
+  .class-tabs-row {
+    display: flex;
+    align-items: stretch;
+    gap: 14px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .class-tabs-row .class-tabs { flex: 1 1 360px; margin-bottom: 0; }
+  .class-full-link {
+    white-space: nowrap;
+    align-self: stretch;
+    display: inline-flex;
+    align-items: center;
+  }
   .class-tabs {
     display: flex;
     gap: 0;
@@ -693,11 +707,14 @@
 
     <p style="max-width:720px;color:var(--ink-soft);font-size:14px;margin-bottom:18px;">Each team has 6 classes tuned to its biome economy. <em>Click any card to flip for ability detail.</em></p>
 
-    <div class="class-tabs" role="tablist" id="class-tabs">
-      <button data-team="ocean" aria-selected="true">Ocean</button>
-      <button data-team="nether" aria-selected="false">Nether</button>
-      <button data-team="plains" aria-selected="false">Plains</button>
-      <button data-team="mountain" aria-selected="false">Mountain</button>
+    <div class="class-tabs-row">
+      <div class="class-tabs" role="tablist" id="class-tabs">
+        <button type="button" role="tab" data-team="ocean" aria-selected="true">Ocean</button>
+        <button type="button" role="tab" data-team="nether" aria-selected="false">Nether</button>
+        <button type="button" role="tab" data-team="plains" aria-selected="false">Plains</button>
+        <button type="button" role="tab" data-team="mountain" aria-selected="false">Mountain</button>
+      </div>
+      <a class="btn class-full-link" id="class-full-link" href="classes/ocean-classes.html">Full Ocean classes page ▸</a>
     </div>
     <div class="class-grid" id="class-grid">
       <!-- populated by JS -->
