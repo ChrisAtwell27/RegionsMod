@@ -1,0 +1,80 @@
+site_name: RegionsMod
+site_description: Minigame-style Minecraft mod where four asymmetric nations compete across warm and cold seasons.
+site_url: https://chrisatwell27.github.io/RegionsMod/
+repo_url: https://github.com/ChrisAtwell27/RegionsMod
+repo_name: ChrisAtwell27/RegionsMod
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.instant
+    - navigation.tracking
+    - toc.follow
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.snippets
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Hosting a Game: getting-started/hosting-a-game.md
+    - Joining a Game: getting-started/joining-a-game.md
+  - Gameplay:
+    - Timeline: gameplay/timeline.md
+    - Cold Season: gameplay/cold-season.md
+    - Economy & Trade: gameplay/economy-and-trade.md
+    - Deposits: gameplay/deposits.md
+  - Teams:
+    - Overview: teams/index.md
+    - Ocean: teams/ocean.md
+    - Nether: teams/nether.md
+    - Plains: teams/plains.md
+    - Mountain: teams/mountain.md
+  - Classes:
+    - Overview: classes/index.md
+    - Ocean Classes: classes/ocean-classes.md
+    - Nether Classes: classes/nether-classes.md
+    - Plains Classes: classes/plains-classes.md
+    - Mountain Classes: classes/mountain-classes.md
+  - Reference:
+    - Commands: reference/commands.md
+    - Signs: reference/signs.md
+    - Protected Areas: reference/protected-areas.md
