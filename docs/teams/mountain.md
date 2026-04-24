@@ -30,6 +30,10 @@ None.
 
 Villager. Sells ores, ingots, and mining tools.
 
+## Mass event
+
+If mountain permanently loses half its starting members (rounded down), a Warden spawns at the preset Warden spawn point. The Warden has 100 HP, never aggros dwarves, and attacks any non-mountain player in range. See [Mass Events](../gameplay/mass-events.md).
+
 ## Classes
 
 See [Mountain Classes](../classes/mountain-classes.md).

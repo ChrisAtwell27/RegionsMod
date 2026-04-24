@@ -28,6 +28,7 @@ A 15-minute Cold Season starts every 15 minutes. Water freezes. Crops stop. Furn
 - [Join a game](getting-started/joining-a-game.md)
 - [Timeline](gameplay/timeline.md)
 - [Cold Season](gameplay/cold-season.md)
+- [Mass Events](gameplay/mass-events.md)
 - [Economy](gameplay/economy-and-trade.md)
 - [Deposits](gameplay/deposits.md)
 - [Teams](teams/index.md)
