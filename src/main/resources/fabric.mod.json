@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "regionsmod",
+	"id": "regionsmoba",
 	"version": "${version}",
-	"name": "Regions Mod",
+	"name": "Regions MOBA",
 	"description": "Adds regions to Minecraft.",
 	"authors": [
 		"You"
@@ -10,20 +10,20 @@
 	"contact": {
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/regionsmod/icon.png",
+	"icon": "assets/regionsmoba/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.regionsmod.RegionsMod"
+			"com.regionsmoba.RegionsMOBA"
 		],
 		"client": [
-			"com.regionsmod.client.RegionsModClient"
+			"com.regionsmoba.client.RegionsMOBAClient"
 		]
 	},
 	"mixins": [
-		"regionsmod.mixins.json",
+		"regionsmoba.mixins.json",
 		{
-			"config": "regionsmod.client.mixins.json",
+			"config": "regionsmoba.client.mixins.json",
 			"environment": "client"
 		}
 	],

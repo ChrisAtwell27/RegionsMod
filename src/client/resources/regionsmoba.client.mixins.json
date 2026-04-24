@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "com.regionsmod.client.mixin",
+	"package": "com.regionsmoba.client.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"client": [
 		"ExampleClientMixin"

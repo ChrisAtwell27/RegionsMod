@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Trial Chamber — RegionsMod</title>
+<link rel="stylesheet" href="../assets/theme.css"/>
+</head>
+<body data-section="gameplay" data-active="trial-chamber">
+
+<main class="doc-layout">
+  <aside class="doc-sidebar"></aside>
+
+  <article class="doc-main">
+    <nav class="doc-breadcrumb">
+      <a href="../index.html">Home</a>
+      <span class="sep">/</span>
+      <span>gameplay</span>
+      <span class="sep">/</span>
+      <span>Trial Chamber</span>
+    </nav>
+
+    <header class="block bg-checker" style="padding:28px;margin-bottom:32px;color:var(--ink);">
+      <div style="font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:0.14em;opacity:0.9;margin-bottom:8px;">
+        gameplay
+      </div>
+      <h1 style="font-family:var(--pixel);font-size:30px;line-height:1.15;color:var(--ink);">Trial Chamber</h1>
+    </header>
+
+    <div class="doc-toc"><h4>On this page</h4><ol></ol></div>
+
+    <div class="md-body">
+<p>A fixed arena at the center of the map where all four biomes meet. Every 10 minutes, trial spawners activate a large enemy wave. The team with the most kills in the wave earns the loot.</p>
+<h2>Location</h2>
+<p>Center of the map, spanning the intersection of all four biomes. Exact bounds are set by an operator with the chamber commands.</p>
+<h2>Waves</h2>
+<p>Waves fire on a 10-minute cadence.</p>
+<ul><li>Every registered mob spawn point releases enemies at the start of a wave.</li><li>Kills are tracked per team for the duration of the wave.</li><li>The wave ends when every spawned enemy is dead or despawned.</li></ul>
+<h2>Scoring</h2>
+<p>At the end of a wave, the team with the most enemy kills wins the loot. Ties split the loot evenly between tied teams.</p>
+<h2>Loot</h2>
+<p>Loot varies per wave. Typical drops:</p>
+<ul><li>Long-duration (10-minute) potion buffs — Strength, Speed, and similar beneficial effects.</li><li>Emeralds.</li><li>Other valuables from a rotating drop table.</li></ul>
+<p>Potion buffs are applied to every living member of the winning team. Item drops appear inside the chamber.</p>
+<h2>Block protection</h2>
+<p>No blocks can be broken inside the chamber bounds. This applies to every team, including operators during a scored match. Trial spawners, structural blocks, and any cosmetic blocks in the chamber are all unbreakable.</p>
+<p>This protection is stricter than a named <a href="../reference/protected-areas.html">Protected Area</a>: deposits do not function inside the chamber.</p>
+<h2>Setup</h2>
+<p>Chamber bounds and mob spawn points are registered via operator commands. See <a href="../reference/commands.html">Commands</a>.</p>
+    </div>
+  </article>
+</main>
+
+<script src="../assets/nav.js"></script>
+<script src="../assets/docs.js"></script>
+</body>
+</html>

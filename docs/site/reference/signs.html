@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Signs — RegionsMod</title>
+<link rel="stylesheet" href="../assets/theme.css"/>
+</head>
+<body data-section="reference" data-active="signs">
+
+<main class="doc-layout">
+  <aside class="doc-sidebar"></aside>
+
+  <article class="doc-main">
+    <nav class="doc-breadcrumb">
+      <a href="../index.html">Home</a>
+      <span class="sep">/</span>
+      <span>reference</span>
+      <span class="sep">/</span>
+      <span>Signs</span>
+    </nav>
+
+    <header class="block bg-checker" style="padding:28px;margin-bottom:32px;color:var(--ink);">
+      <div style="font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:0.14em;opacity:0.9;margin-bottom:8px;">
+        reference
+      </div>
+      <h1 style="font-family:var(--pixel);font-size:30px;line-height:1.15;color:var(--ink);">Signs</h1>
+    </header>
+
+    <div class="doc-toc"><h4>On this page</h4><ol></ol></div>
+
+    <div class="md-body">
+<h2>[Nations] sign</h2>
+<p>Place a sign anywhere outside the lobby. Format:</p>
+<pre><code class="lang-text">Row 1: [Nations]
+Row 2: &lt;min_players&gt;</code></pre>
+<p>Rules:</p>
+<ul><li>Row 1 must be <code>[Nations]</code> (case-insensitive).</li><li>Row 2 must be a positive integer and a multiple of 4.</li></ul>
+<p>Once placed, the sign becomes a live join board showing the current join count.</p>
+<p>Players right-click to join. Right-click again to leave before the match starts.</p>
+<p>When the join count reaches the minimum, all joiners teleport to the lobby and the match begins.</p>
+<h2>Invalid signs</h2>
+<p>If row 2 is not a positive multiple of 4, the sign is rejected. A chat message tells the placer the sign was not accepted.</p>
+    </div>
+  </article>
+</main>
+
+<script src="../assets/nav.js"></script>
+<script src="../assets/docs.js"></script>
+</body>
+</html>

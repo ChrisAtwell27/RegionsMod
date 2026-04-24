@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Commands — RegionsMod</title>
+<link rel="stylesheet" href="../assets/theme.css"/>
+</head>
+<body data-section="reference" data-active="commands">
+
+<main class="doc-layout">
+  <aside class="doc-sidebar"></aside>
+
+  <article class="doc-main">
+    <nav class="doc-breadcrumb">
+      <a href="../index.html">Home</a>
+      <span class="sep">/</span>
+      <span>reference</span>
+      <span class="sep">/</span>
+      <span>Commands</span>
+    </nav>
+
+    <header class="block bg-checker" style="padding:28px;margin-bottom:32px;color:var(--ink);">
+      <div style="font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:0.14em;opacity:0.9;margin-bottom:8px;">
+        reference
+      </div>
+      <h1 style="font-family:var(--pixel);font-size:30px;line-height:1.15;color:var(--ink);">Commands</h1>
+    </header>
+
+    <div class="doc-toc"><h4>On this page</h4><ol></ol></div>
+
+    <div class="md-body">
+<p>All commands are operator-only. Exact argument syntax is finalized in the implementation spec.</p>
+<h2>Area commands</h2>
+<p>Run at each corner. <code>pos1</code> is the high corner (max X, Y, Z). <code>pos2</code> is the low corner (min X, Y, Z). The area is the cuboid between them.</p>
+<div style="overflow-x:auto;"><table><thead><tr><th>Command</th><th>Effect</th></tr></thead><tbody><tr><td><code>/regions setlobby pos1</code></td><td>Mark lobby high corner</td></tr><tr><td><code>/regions setlobby pos2</code></td><td>Mark lobby low corner</td></tr><tr><td><code>/regions setbiomebounds &lt;biome&gt; pos1</code></td><td>Mark biome high corner</td></tr><tr><td><code>/regions setbiomebounds &lt;biome&gt; pos2</code></td><td>Mark biome low corner</td></tr></tbody></table></div>
+<h2>Protected area commands</h2>
+<p>Named rectangular zones where block-mining is blocked for every block <strong>except registered ore deposits</strong>. Deposits inside a protected area continue to function normally — mined, cobbled, and regenerated on schedule. See <a href="protected-areas.html">Protected Areas</a>.</p>
+<div style="overflow-x:auto;"><table><thead><tr><th>Command</th><th>Effect</th></tr></thead><tbody><tr><td><code>/regions addprotectedarea &lt;name&gt; pos1</code></td><td>Mark high corner of a new named protected area</td></tr><tr><td><code>/regions addprotectedarea &lt;name&gt; pos2</code></td><td>Mark low corner; area is created once both corners are set</td></tr><tr><td><code>/regions removeprotectedarea &lt;name&gt;</code></td><td>Delete a named protected area</td></tr><tr><td><code>/regions listprotectedareas</code></td><td>Print all registered protected areas with their bounds</td></tr></tbody></table></div>
+<h2>Trial chamber commands</h2>
+<p>A single fixed arena at the center of the map. Block-mining is blocked everywhere inside the bounds. See <a href="../gameplay/trial-chamber.html">Trial Chamber</a>.</p>
+<div style="overflow-x:auto;"><table><thead><tr><th>Command</th><th>Effect</th></tr></thead><tbody><tr><td><code>/regions setchamberbounds pos1</code></td><td>Mark trial chamber high corner</td></tr><tr><td><code>/regions setchamberbounds pos2</code></td><td>Mark trial chamber low corner</td></tr><tr><td><code>/regions addchamberspawn</code></td><td>Register the current position as a mob spawn point for trial waves. Returns the new index.</td></tr><tr><td><code>/regions removechamberspawn &lt;index&gt;</code></td><td>Remove a mob spawn point by index</td></tr><tr><td><code>/regions listchamberspawns</code></td><td>Print all registered chamber mob spawn points with their positions</td></tr></tbody></table></div>
+<h2>Target commands</h2>
+<p>Run the command, then right-click the intended block or entity. The next right-click registers the target.</p>
+<div style="overflow-x:auto;"><table><thead><tr><th>Command</th><th>Effect</th></tr></thead><tbody><tr><td><code>/regions setconduit</code></td><td>Register the next right-clicked block as the ocean conduit</td></tr><tr><td><code>/regions setfurnace</code></td><td>Register the next right-clicked block as the nether furnace</td></tr><tr><td><code>/regions setcomposter</code></td><td>Register the next right-clicked block as the plains composter</td></tr><tr><td><code>/regions settrader &lt;biome&gt;</code></td><td>Register the next right-clicked entity as a biome's trader</td></tr><tr><td><code>/regions addoredeposit &lt;time&gt;</code></td><td>Register the next right-clicked ore block as a deposit with regen time. Ore type inferred from the block.</td></tr><tr><td><code>/regions addmobdeposit &lt;mob&gt; &lt;time&gt;</code></td><td>Register the next right-clicked block as a mob spawn point with spawn interval</td></tr></tbody></table></div>
+<h2>Position commands</h2>
+<p>Run at the target position.</p>
+<div style="overflow-x:auto;"><table><thead><tr><th>Command</th><th>Effect</th></tr></thead><tbody><tr><td><code>/regions setspawn &lt;biome&gt;</code></td><td>Mark current position as a team spawn</td></tr><tr><td><code>/regions setwardenspawn</code></td><td>Mark current position as the mountain mass-event Warden spawn</td></tr><tr><td><code>/regions setguardianspawn &lt;index&gt;</code></td><td>Mark current position as an ocean mass-event Elder Guardian spawn slot. Any number of slots may be registered.</td></tr><tr><td><code>/regions setwitherspawn</code></td><td>Mark current position as the nether mass-event Wither spawn</td></tr></tbody></table></div>
+<h2>Match control</h2>
+<div style="overflow-x:auto;"><table><thead><tr><th>Command</th><th>Effect</th></tr></thead><tbody><tr><td><code>/regions start</code></td><td>Start a match manually</td></tr><tr><td><code>/regions abort</code></td><td>End the current match</td></tr><tr><td><code>/regions skip-season</code></td><td>Force next phase change</td></tr><tr><td><code>/regions status</code></td><td>Print current match state</td></tr><tr><td><code>/regions version</code></td><td>Print mod version</td></tr></tbody></table></div>
+<h2>Debug commands</h2>
+<p>Grouped under <code>/regions debug &lt;...&gt;</code>. Operator-only and intended for development, map testing, and live troubleshooting. Avoid using in scored matches.</p>
+<h3>Visualization</h3>
+<p>Toggles particle overlays for registered zones and objects. Toggling a second time turns the overlay off.</p>
+<div style="overflow-x:auto;"><table><thead><tr><th>Command</th><th>Effect</th></tr></thead><tbody><tr><td><code>/regions debug show protected</code></td><td>Outline every protected area in red particles</td></tr><tr><td><code>/regions debug show deposits</code></td><td>Highlight ore and mob deposits, with regen timer above each</td></tr><tr><td><code>/regions debug show spawns</code></td><td>Mark all team spawn points</td></tr><tr><td><code>/regions debug show biomes</code></td><td>Outline biome bounds in team colors</td></tr><tr><td><code>/regions debug show lifelines</code></td><td>Mark the Conduit, Furnace, and Composter with their current state</td></tr><tr><td><code>/regions debug show lobby</code></td><td>Outline the lobby area</td></tr><tr><td><code>/regions debug show all</code></td><td>Enable every overlay at once</td></tr><tr><td><code>/regions debug show off</code></td><td>Turn every overlay off</td></tr></tbody></table></div>
+<h3>Match state</h3>
+<div style="overflow-x:auto;"><table><thead><tr><th>Command</th><th>Effect</th></tr></thead><tbody><tr><td>`/regions debug season &lt;cold\</td><td>warm&gt;`</td><td>Force the current season to cold or warm without changing the timer</td></tr><tr><td>`/regions debug pvp &lt;on\</td><td>off\</td><td>permanent&gt;`</td><td>Force the PVP flag state</td></tr><tr><td><code>/regions debug seasontimer &lt;seconds&gt;</code></td><td>Set the remaining seconds on the current season timer</td></tr><tr><td>`/regions debug bloodtribute &lt;satisfy\</td><td>reset\</td><td>fail&gt;`</td><td>Satisfy, reset, or fail the current Mountain Blood Tribute</td></tr><tr><td><code>/regions debug state</code></td><td>Dump full match state (season, timers, lifelines, player counts) to the command sender</td></tr><tr><td><code>/regions debug reload</code></td><td>Re-read configuration files without restarting the server</td></tr></tbody></table></div>
+<h3>Lifelines</h3>
+<div style="overflow-x:auto;"><table><thead><tr><th>Command</th><th>Effect</th></tr></thead><tbody><tr><td><code>/regions debug conduit hp &lt;0-200&gt;</code></td><td>Set Ocean Conduit HP</td></tr><tr><td>`/regions debug furnace &lt;lit\</td><td>unlit&gt;`</td><td>Force Nether Furnace state</td></tr><tr><td><code>/regions debug furnace fuel &lt;ticks&gt;</code></td><td>Set remaining fuel ticks in the Nether Furnace</td></tr><tr><td><code>/regions debug composter uses &lt;count&gt;</code></td><td>Set emerald-conversion count since match start (for economy debugging)</td></tr></tbody></table></div>
+<h3>Deposits</h3>
+<div style="overflow-x:auto;"><table><thead><tr><th>Command</th><th>Effect</th></tr></thead><tbody><tr><td><code>/regions debug deposits regen</code></td><td>Instantly regenerate every ore deposit</td></tr><tr><td><code>/regions debug deposits reset</code></td><td>Reset every ore and mob deposit to its starting state and clear cooldowns</td></tr><tr><td><code>/regions debug deposit info</code></td><td>Print info on the next right-clicked deposit block (type, cooldown, regen time)</td></tr></tbody></table></div>
+<h3>Players</h3>
+<div style="overflow-x:auto;"><table><thead><tr><th>Command</th><th>Effect</th></tr></thead><tbody><tr><td><code>/regions debug team &lt;player&gt; &lt;biome&gt;</code></td><td>Force-assign a player to a biome team</td></tr><tr><td><code>/regions debug class &lt;player&gt; &lt;class&gt;</code></td><td>Force a player's class (grants kit, clears previous class items)</td></tr><tr><td><code>/regions debug lives &lt;player&gt; &lt;count&gt;</code></td><td>Set a player's remaining lives</td></tr><tr><td><code>/regions debug cooldowns &lt;player&gt; clear</code></td><td>Clear every class-ability cooldown on a player</td></tr><tr><td><code>/regions debug kit &lt;player&gt;</code></td><td>Re-grant the player's current class kit</td></tr><tr><td>`/regions debug tp &lt;player&gt; &lt;biome\</td><td>lobby&gt;`</td><td>Teleport a player to a biome spawn or the lobby</td></tr><tr><td><code>/regions debug spectate &lt;player&gt;</code></td><td>Force a player into spectator state</td></tr></tbody></table></div>
+<h3>Entities</h3>
+<div style="overflow-x:auto;"><table><thead><tr><th>Command</th><th>Effect</th></tr></thead><tbody><tr><td><code>/regions debug trader respawn &lt;biome&gt;</code></td><td>Respawn the biome trader at its registered location</td></tr><tr><td><code>/regions debug mob kill &lt;radius&gt;</code></td><td>Kill every mod-spawned mob in radius (does not touch vanilla mobs)</td></tr></tbody></table></div>
+    </div>
+  </article>
+</main>
+
+<script src="../assets/nav.js"></script>
+<script src="../assets/docs.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-package com.regionsmod.client.mixin;
+package com.regionsmoba.client.mixin;
 
 import net.minecraft.client.Minecraft;
 import org.spongepowered.asm.mixin.Mixin;

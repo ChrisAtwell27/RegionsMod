@@ -1,6 +1,6 @@
 # Mountain Classes
 
-Six classes. Adapted from Shotbow Annihilation to RegionsMod mechanics. Notable RegionsMod-specific changes are flagged **[tweak]**.
+Six classes. Adapted from Shotbow Annihilation to RegionsMOBA mechanics. Notable RegionsMOBA-specific changes are flagged **[tweak]**.
 
 | # | Name | Weapon | Key Ability |
 | --- | --- | --- | --- |
@@ -34,7 +34,7 @@ Right-click to open a chest menu containing a random mix of blocks. **90-second 
 | Iron Bars | 10 |
 | Torch | 5 |
 
-**[tweak]** The Annihilation "Delaying Block" is removed — no equivalent exists in RegionsMod.
+**[tweak]** The Annihilation "Delaying Block" is removed — no equivalent exists in RegionsMOBA.
 
 ### Replication Cache
 
@@ -122,7 +122,7 @@ Spawns with an Efficiency I / Unbreaking I stone pickaxe called **Miner's Passio
 
 Every ore mined has a 67% chance to yield two.
 
-- Affected ores: Iron, Gold, Coal, Diamond. **[tweak: Emerald removed — Plains-exclusive resource in RegionsMod.]**
+- Affected ores: Iron, Gold, Coal, Diamond. **[tweak: Emerald removed — Plains-exclusive resource in RegionsMOBA.]**
 
 ### Gold Rush
 
@@ -155,7 +155,7 @@ Place a PowerPad block; a pressure plate appears on top. Stepping on it (self or
 | Gold Block | Haste II | 15 s |
 | Deepslate Block **[tweak: was Emerald]** | Absorption I | 20 s |
 
-**[tweak]** Emerald PowerPad replaced with Deepslate. Emeralds are a Plains-only resource in RegionsMod; locking the best defensive pad behind an enemy team's economy made the class unreliable. Deepslate is mountain-native, so the Absorption pad now obtains from deep mining.
+**[tweak]** Emerald PowerPad replaced with Deepslate. Emeralds are a Plains-only resource in RegionsMOBA; locking the best defensive pad behind an enemy team's economy made the class unreliable. Deepslate is mountain-native, so the Absorption pad now obtains from deep mining.
 
 - Spawn with Redstone and Coal pads only. The other three are crafted from their block material as you mine.
 - Stepping on a pad refreshes its buff to full duration.

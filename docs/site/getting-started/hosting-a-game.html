@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Host a game — RegionsMod</title>
+<link rel="stylesheet" href="../assets/theme.css"/>
+</head>
+<body data-section="getting-started" data-active="hosting-a-game">
+
+<main class="doc-layout">
+  <aside class="doc-sidebar"></aside>
+
+  <article class="doc-main">
+    <nav class="doc-breadcrumb">
+      <a href="../index.html">Home</a>
+      <span class="sep">/</span>
+      <span>getting started</span>
+      <span class="sep">/</span>
+      <span>Host a game</span>
+    </nav>
+
+    <header class="block bg-checker" style="padding:28px;margin-bottom:32px;color:var(--ink);">
+      <div style="font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:0.14em;opacity:0.9;margin-bottom:8px;">
+        getting started · 02 // OPERATOR
+      </div>
+      <h1 style="font-family:var(--pixel);font-size:30px;line-height:1.15;color:var(--ink);">Host a game</h1>
+    </header>
+
+    <div class="doc-toc"><h4>On this page</h4><ol></ol></div>
+
+    <div class="md-body">
+<p>A match needs a map with four biome regions, configured areas, and a <code>[Nations]</code> sign.</p>
+<h2>Build the map</h2>
+<p>One world with four biome regions (plains, mountain, nether, ocean) and a lobby area. Each biome needs room for a team spawn, deposits, and a lifeline block where applicable.</p>
+<h2>Register regions</h2>
+<p>All commands are operator-only. Three input patterns:</p>
+<ul><li><strong>Area commands</strong> use <code>pos1</code> and <code>pos2</code> run at opposite corners.</li><li><strong>Target commands</strong> register the next block or entity the operator right-clicks.</li><li><strong>Position commands</strong> use the operator's current position.</li></ul>
+<pre><code class="lang-text">/regions setlobby pos1
+/regions setlobby pos2
+/regions setbiomebounds &lt;biome&gt; pos1
+/regions setbiomebounds &lt;biome&gt; pos2
+/regions setspawn &lt;biome&gt;
+/regions setconduit
+/regions setfurnace
+/regions setcomposter
+/regions settrader &lt;biome&gt;
+/regions addoredeposit &lt;time&gt;
+/regions addmobdeposit &lt;mob&gt; &lt;time&gt;</code></pre>
+<p><code>pos1</code> marks the high corner (max X, Y, Z). <code>pos2</code> marks the low corner (min X, Y, Z). The area is the cuboid between them.</p>
+<p>For target commands, run the command then right-click the intended block or entity. The next right-click registers the target. <code>addoredeposit</code> infers the ore type from the clicked block.</p>
+<p>All registered areas are mine and place protected.</p>
+<h2>Place a [Nations] sign</h2>
+<p>Place a sign outside the lobby with:</p>
+<pre><code class="lang-text">Row 1: [Nations]
+Row 2: &lt;min_players&gt;</code></pre>
+<p>Row 1 must be <code>[Nations]</code>. Row 2 must be a positive integer and a multiple of 4.</p>
+<p>Players right-click to join. When the join count reaches the minimum, all joiners teleport to the lobby and the match begins.</p>
+<h2>Admin commands during a match</h2>
+<div style="overflow-x:auto;"><table><thead><tr><th>Command</th><th>Effect</th></tr></thead><tbody><tr><td><code>/regions abort</code></td><td>End the match</td></tr><tr><td><code>/regions skip-season</code></td><td>Force next phase change</td></tr><tr><td><code>/regions status</code></td><td>Print match state</td></tr></tbody></table></div>
+    </div>
+  </article>
+</main>
+
+<script src="../assets/nav.js"></script>
+<script src="../assets/docs.js"></script>
+</body>
+</html>

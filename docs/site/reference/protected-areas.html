@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Protected Areas — RegionsMod</title>
+<link rel="stylesheet" href="../assets/theme.css"/>
+</head>
+<body data-section="reference" data-active="protected-areas">
+
+<main class="doc-layout">
+  <aside class="doc-sidebar"></aside>
+
+  <article class="doc-main">
+    <nav class="doc-breadcrumb">
+      <a href="../index.html">Home</a>
+      <span class="sep">/</span>
+      <span>reference</span>
+      <span class="sep">/</span>
+      <span>Protected Areas</span>
+    </nav>
+
+    <header class="block bg-checker" style="padding:28px;margin-bottom:32px;color:var(--ink);">
+      <div style="font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:0.14em;opacity:0.9;margin-bottom:8px;">
+        reference
+      </div>
+      <h1 style="font-family:var(--pixel);font-size:30px;line-height:1.15;color:var(--ink);">Protected Areas</h1>
+    </header>
+
+    <div class="doc-toc"><h4>On this page</h4><ol></ol></div>
+
+    <div class="md-body">
+<p>A protected area is a region where default block interactions are disabled to keep match-critical objects and zones intact.</p>
+<h2>Sources of protection</h2>
+<p>Protected areas come from two places:</p>
+<ol><li><strong>Implicit</strong> — any location registered with a <code>/regions</code> command is protected. This includes the lobby, biome bounds, the three lifeline blocks (Conduit, Furnace, Composter), traders, and every registered ore and mob deposit.</li><li><strong>Explicit named zones</strong> — arbitrary rectangles created with <code>/regions addprotectedarea &lt;name&gt; pos1 / pos2</code>. Useful for sealing trader huts, build stages, parkour courses, or any area a map author wants intact.</li></ol>
+<h2>Blocked inside protected areas</h2>
+<ul><li>Mining blocks</li><li>Placing blocks</li><li>Interacting with block entities (chests, furnaces)</li><li>Damaging entities marked as protected (traders)</li></ul>
+<h2>Explicit exceptions</h2>
+<ul><li><strong>Mining an ore deposit block is allowed inside any protected area.</strong> The block converts to cobblestone and starts its registered regen timer. A named protected area drawn across a cluster of deposits leaves those deposits fully functional — every other block in the zone is unmineable, but the deposits mine and regenerate normally.</li><li>Breaking the ocean conduit is allowed. Each break removes 1 HP and respawns the block.</li><li>Feeding fuel to the nether furnace is allowed.</li><li>Right-clicking the plains composter with a crop is allowed.</li></ul>
+<h2>Unprotected areas</h2>
+<p>Anywhere not covered by an implicit or explicit protected area is free to mine, place, and interact with normally. This is the default for most of the map.</p>
+<h2>Visualizing protected areas</h2>
+<p>Run <code>/regions debug show protected</code> to toggle a red particle outline around every protected area — helpful when laying out deposit clusters or verifying that a named zone covers what you intended.</p>
+    </div>
+  </article>
+</main>
+
+<script src="../assets/nav.js"></script>
+<script src="../assets/docs.js"></script>
+</body>
+</html>

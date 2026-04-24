@@ -8,7 +8,7 @@ At 0 HP, every ocean player's next death is final regardless of lives remaining.
 
 ## Passive
 
-Permanent Water Breathing. Immune to drowning for the entire match.
+None.
 
 ## Cold season effect
 

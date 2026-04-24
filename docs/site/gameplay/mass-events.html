@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Mass Events — RegionsMod</title>
+<link rel="stylesheet" href="../assets/theme.css"/>
+</head>
+<body data-section="gameplay" data-active="mass-events">
+
+<main class="doc-layout">
+  <aside class="doc-sidebar"></aside>
+
+  <article class="doc-main">
+    <nav class="doc-breadcrumb">
+      <a href="../index.html">Home</a>
+      <span class="sep">/</span>
+      <span>gameplay</span>
+      <span class="sep">/</span>
+      <span>Mass Events</span>
+    </nav>
+
+    <header class="block bg-checker" style="padding:28px;margin-bottom:32px;color:var(--ink);">
+      <div style="font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:0.14em;opacity:0.9;margin-bottom:8px;">
+        gameplay
+      </div>
+      <h1 style="font-family:var(--pixel);font-size:30px;line-height:1.15;color:var(--ink);">Mass Events</h1>
+    </header>
+
+    <div class="doc-toc"><h4>On this page</h4><ol></ol></div>
+
+    <div class="md-body">
+<p>When a team permanently loses half of its starting members (rounded down), a one-time mass event fires for that team's region to give them an edge.</p>
+<p>A player is "permanently lost" once they are out of lives and locked into spectator mode. Ocean players who die with the conduit at 0 HP also count.</p>
+<p>Each team's event fires at most once per match. Event entities can be killed with enough effort.</p>
+<h2>Summary</h2>
+<div style="overflow-x:auto;"><table><thead><tr><th>Team</th><th>Event</th><th>Trigger</th></tr></thead><tbody><tr><td>Plains</td><td>3 independent Pillager patrol squads roam the biome, attacking non-plains players</td><td>Half of plains permanently lost</td></tr><tr><td>Mountain</td><td>A Warden spawns at a preset point, ignores dwarves, 100 HP</td><td>Half of mountain permanently lost</td></tr><tr><td>Ocean</td><td>Stationary Elder Guardians spawn at preset points, default HP</td><td>Half of ocean permanently lost</td></tr><tr><td>Nether</td><td>A stationary Wither spawns at a preset point, shoots skulls at non-nether players, default HP</td><td>Half of nether permanently lost</td></tr></tbody></table></div>
+<h2>Plains — Pillager patrols</h2>
+<p>Three Pillager squads spawn inside the plains biome and patrol independently. Each squad targets any player who is not on the plains team.</p>
+<p>Squads are not stationary. They path around the biome and engage on sight. Plains players are ignored.</p>
+<p>No spawn command — squads spawn and path within the registered plains biome bounds.</p>
+<h2>Mountain — Warden</h2>
+<p>A single Warden spawns at a preset point inside the mountain biome.</p>
+<ul><li>HP: 100 (reduced from vanilla)</li><li>Never aggros mountain (dwarf) players</li><li>Attacks any non-mountain player in range using standard Warden behavior</li></ul>
+<p>Spawn point is set with <code>/regions setwardenspawn</code>.</p>
+<h2>Ocean — Elder Guardian turrets</h2>
+<p>One or more Elder Guardians spawn at preset points inside the ocean biome. Each Elder Guardian is stationary — it cannot move from its spawn point — but it can attack any non-ocean player in range.</p>
+<ul><li>HP: default (vanilla Elder Guardian)</li><li>Cannot path or reposition</li><li>Attacks normally (laser beam, thorns aura)</li></ul>
+<p>Spawn points are set with <code>/regions setguardianspawn &lt;index&gt;</code>, where <code>&lt;index&gt;</code> selects which guardian slot is being placed. Any number of guardian slots may be registered.</p>
+<h2>Nether — Wither turret</h2>
+<p>A single stationary Wither spawns at a preset point inside the nether biome. It cannot move but fires wither skulls at any player who is not on the nether team.</p>
+<ul><li>HP: default (vanilla Wither)</li><li>Cannot path or reposition</li><li>Only targets non-nether players</li></ul>
+<p>Spawn point is set with <code>/regions setwitherspawn</code>.</p>
+    </div>
+  </article>
+</main>
+
+<script src="../assets/nav.js"></script>
+<script src="../assets/docs.js"></script>
+</body>
+</html>

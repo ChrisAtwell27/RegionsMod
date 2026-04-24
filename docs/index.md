@@ -1,4 +1,4 @@
-# RegionsMod
+# RegionsMOBA
 
 Fabric minigame mod for Minecraft 1.21.11. Four asymmetric nations compete on a shared map.
 
@@ -29,6 +29,7 @@ A 15-minute Cold Season starts every 15 minutes. Water freezes. Crops stop. Furn
 - [Timeline](gameplay/timeline.md)
 - [Cold Season](gameplay/cold-season.md)
 - [Mass Events](gameplay/mass-events.md)
+- [Trial Chamber](gameplay/trial-chamber.md)
 - [Economy](gameplay/economy-and-trade.md)
 - [Deposits](gameplay/deposits.md)
 - [Teams](teams/index.md)

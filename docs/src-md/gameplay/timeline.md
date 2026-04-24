@@ -14,8 +14,6 @@ Matches run at least 60 minutes. Alternating 15-minute warm and cold phases.
 
 After Cold 2 ends, PVP stays on permanently. Cold season environmental effects keep cycling every 15 minutes.
 
-PVP is always on inside the [Trial Chamber](trial-chamber.md) regardless of phase.
-
 ## Lives
 
 Every player starts with 3 lives. Dying respawns you at team spawn with -1 life. At 0 lives, spectator mode for the rest of the match.

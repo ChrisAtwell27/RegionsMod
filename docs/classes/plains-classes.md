@@ -1,6 +1,6 @@
 # Plains Classes
 
-Six classes. Adapted from Shotbow Annihilation to RegionsMod mechanics. Notable RegionsMod-specific changes are flagged **[tweak]**.
+Six classes. Adapted from Shotbow Annihilation to RegionsMOBA mechanics. Notable RegionsMOBA-specific changes are flagged **[tweak]**.
 
 | # | Name | Weapon | Key Ability |
 | --- | --- | --- | --- |
@@ -11,7 +11,7 @@ Six classes. Adapted from Shotbow Annihilation to RegionsMod mechanics. Notable 
 | 5 | Lumberjack | Efficiency I stone axe | Brute Force |
 | 6 | Scout | Golden sword + Grapple | Grapple hook traversal |
 
-**[tweak]** All Annihilation rank/XP unlock gates (Novice-II, 15,000 XP, etc.) are removed — every class is available at class-select in RegionsMod.
+**[tweak]** All Annihilation rank/XP unlock gates (Novice-II, 15,000 XP, etc.) are removed — every class is available at class-select in RegionsMOBA.
 
 ---
 
@@ -61,7 +61,7 @@ Right-click to spawn a decoy clone at the Spy's position and grant the Spy 6 sec
 
 - **40-second cooldown.**
 - **[tweak]** Flee cannot be used within 20 blocks of an enemy **lifeline block** — specifically Ocean's Conduit, Nether's Furnace, or Plains' Composter. Mountain has no lifeline block, so Flee works freely inside the mountain biome.
-- **[tweak]** The "Mercenary's Mark of Death" clause from Annihilation is dropped — no Mercenary class exists in RegionsMod.
+- **[tweak]** The "Mercenary's Mark of Death" clause from Annihilation is dropped — no Mercenary class exists in RegionsMOBA.
 
 ### Backstab
 

@@ -1,8 +1,8 @@
-package com.regionsmod.client;
+package com.regionsmoba.client;
 
 import net.fabricmc.api.ClientModInitializer;
 
-public class RegionsModClient implements ClientModInitializer {
+public class RegionsMOBAClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 	}

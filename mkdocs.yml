@@ -1,8 +1,8 @@
-site_name: RegionsMod
+site_name: RegionsMOBA
 site_description: Minigame-style Minecraft mod where four asymmetric nations compete across warm and cold seasons.
-site_url: https://chrisatwell27.github.io/RegionsMod/
-repo_url: https://github.com/ChrisAtwell27/RegionsMod
-repo_name: ChrisAtwell27/RegionsMod
+site_url: https://chrisatwell27.github.io/RegionsMOBA/
+repo_url: https://github.com/ChrisAtwell27/RegionsMOBA
+repo_name: ChrisAtwell27/RegionsMOBA
 edit_uri: edit/main/docs/
 
 theme:
@@ -61,6 +61,7 @@ nav:
     - Timeline: gameplay/timeline.md
     - Cold Season: gameplay/cold-season.md
     - Mass Events: gameplay/mass-events.md
+    - Trial Chamber: gameplay/trial-chamber.md
     - Economy & Trade: gameplay/economy-and-trade.md
     - Deposits: gameplay/deposits.md
   - Teams:

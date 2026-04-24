@@ -1,6 +1,6 @@
 # Nether Classes
 
-Six classes. Adapted from Shotbow Annihilation to RegionsMod mechanics. Notable RegionsMod-specific changes are flagged **[tweak]**.
+Six classes. Adapted from Shotbow Annihilation to RegionsMOBA mechanics. Notable RegionsMOBA-specific changes are flagged **[tweak]**.
 
 | # | Name | Weapon | Key Ability |
 | --- | --- | --- | --- |

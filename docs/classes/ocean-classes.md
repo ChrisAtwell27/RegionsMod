@@ -1,6 +1,6 @@
 # Ocean Classes
 
-Six classes. Adapted from Shotbow Annihilation to RegionsMod mechanics. Notable RegionsMod-specific changes are flagged **[tweak]**.
+Six classes. Adapted from Shotbow Annihilation to RegionsMOBA mechanics. Notable RegionsMOBA-specific changes are flagged **[tweak]**.
 
 | # | Name | Weapon | Key Ability |
 | --- | --- | --- | --- |
@@ -38,7 +38,7 @@ bonusHearts = floor( (200 - conduitHP) / 20 )     // capped at +10 hearts (+20 H
 - At 0 Conduit (the "next death is final" threshold) → +10 hearts.
 - Only applies while within the 50-block Conduit radius.
 
-**[tweak]** Because RegionsMod's Conduit only loses HP (never repairs), the Defender's max HP is monotonically non-decreasing during a match. This is intentional as a pure Ocean comeback mechanic; Annihilation's "Handyman can heal your nexus and shrink your Defender" concern doesn't apply here.
+**[tweak]** Because RegionsMOBA's Conduit only loses HP (never repairs), the Defender's max HP is monotonically non-decreasing during a match. This is intentional as a pure Ocean comeback mechanic; Annihilation's "Handyman can heal your nexus and shrink your Defender" concern doesn't apply here.
 
 ### Guardian's Warp
 
@@ -126,7 +126,7 @@ Right-click an enemy within line of sight.
 - Requires line of sight.
 - **60-second cooldown.** The red dye's durability bar shows time remaining.
 
-**[tweak]** The Annihilation reference to killing "through Enchanter levels" is dropped — no Enchanter class exists in RegionsMod. The Berserker max-HP example is kept because that class exists on Mountain.
+**[tweak]** The Annihilation reference to killing "through Enchanter levels" is dropped — no Enchanter class exists in RegionsMOBA. The Berserker max-HP example is kept because that class exists on Mountain.
 
 **[tweak]** Drain can only fire during a PVP window. Outside PVP, right-click does nothing and the cooldown is not consumed.
 

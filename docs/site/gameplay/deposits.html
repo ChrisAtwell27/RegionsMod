@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Deposits — RegionsMod</title>
+<link rel="stylesheet" href="../assets/theme.css"/>
+</head>
+<body data-section="gameplay" data-active="deposits">
+
+<main class="doc-layout">
+  <aside class="doc-sidebar"></aside>
+
+  <article class="doc-main">
+    <nav class="doc-breadcrumb">
+      <a href="../index.html">Home</a>
+      <span class="sep">/</span>
+      <span>gameplay</span>
+      <span class="sep">/</span>
+      <span>Deposits</span>
+    </nav>
+
+    <header class="block bg-checker" style="padding:28px;margin-bottom:32px;color:var(--ink);">
+      <div style="font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:0.14em;opacity:0.9;margin-bottom:8px;">
+        gameplay
+      </div>
+      <h1 style="font-family:var(--pixel);font-size:30px;line-height:1.15;color:var(--ink);">Deposits</h1>
+    </header>
+
+    <div class="doc-toc"><h4>On this page</h4><ol></ol></div>
+
+    <div class="md-body">
+<h2>Ore deposits</h2>
+<p>Each ore deposit is a single block registered with <code>/regions addoredeposit</code>. When mined, the block converts to cobblestone for a set cooldown. When the cooldown ends, the block regenerates to the original ore.</p>
+<p>Outside registered deposits, blocks in all biomes behave normally.</p>
+<h2>Mob deposits</h2>
+<p>Each mob deposit is a location registered with <code>/regions addmobdeposit</code>. A hologram above the deposit displays a countdown to the next spawn. At 0, one mob of the configured type spawns and the timer resets.</p>
+<p>Mob type and spawn interval are set at registration.</p>
+<h2>Cold season effect</h2>
+<p>Mountain ore deposits have longer cooldowns during cold season. Some mountain ore deposits flood or freeze and become temporarily inaccessible.</p>
+    </div>
+  </article>
+</main>
+
+<script src="../assets/nav.js"></script>
+<script src="../assets/docs.js"></script>
+</body>
+</html>

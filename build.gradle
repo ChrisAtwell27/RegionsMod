@@ -19,7 +19,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"regionsmod" {
+		"regionsmoba" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
