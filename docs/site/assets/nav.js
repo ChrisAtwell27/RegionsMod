@@ -1,14 +1,10 @@
 ﻿// Shared site header + footer injected on every page.
 (function () {
-  const currentPath = location.pathname.replace(/\/$/, '').split('/').pop() || 'index.html';
-  const currentDir = (() => {
-    const m = location.pathname.match(/\/site\/([^/]+)\//);
-    return m ? m[1] : null;
-  })();
-
-  // Resolve relative paths depending on depth.
-  // Landing lives at /site/index.html; docs live at /site/<section>/<page>.html.
-  const depth = currentDir ? 1 : 0;
+  // Every page sets <body data-section="..."> — landing uses "home",
+  // sub-pages use their directory name. Use that to determine depth so
+  // the nav works regardless of URL prefix (local /site/, GitHub Pages /RegionsMOBA/, etc.).
+  const bodySection = document.body.dataset.section || 'home';
+  const depth = bodySection === 'home' ? 0 : 1;
   const up = depth === 1 ? '../' : '';
 
   const navLinks = [
@@ -20,7 +16,7 @@
     { label: 'Reference', href: up + 'reference/commands.html', section: 'reference' },
   ];
 
-  const activeSection = document.body.dataset.section || (currentDir ?? 'home');
+  const activeSection = bodySection;
 
   // Pixel logo: a 4x4 grid with the four team colors.
   const logoHtml = `

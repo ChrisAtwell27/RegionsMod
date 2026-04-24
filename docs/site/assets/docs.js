@@ -1,7 +1,9 @@
 // Shared sidebar injector for docs pages. Each page sets data-active="<slug>" on <body>.
 (function () {
-  const depthDir = location.pathname.match(/\/site\/([^/]+)\//);
-  const up = depthDir ? '../' : '';
+  // Sidebar only renders on sub-pages, which all live one level deep. Use body data-section
+  // rather than URL matching so paths resolve under any deploy prefix (GitHub Pages, local, etc.).
+  const bodySection = document.body.dataset.section || 'home';
+  const up = bodySection === 'home' ? '' : '../';
 
   const sections = [
     { title: 'Getting started', items: [
