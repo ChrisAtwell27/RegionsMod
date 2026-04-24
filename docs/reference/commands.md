@@ -2,13 +2,24 @@
 
 All commands are operator-only. Exact argument syntax is finalized in the implementation spec.
 
-## Setup
+## Area commands
+
+Run at each corner. `pos1` is the high corner (max X, Y, Z). `pos2` is the low corner (min X, Y, Z). The area is the cuboid between them.
 
 | Command | Effect |
 | --- | --- |
-| `/regions setlobby` | Mark current location as lobby spawn |
+| `/regions setlobby pos1` | Mark lobby high corner |
+| `/regions setlobby pos2` | Mark lobby low corner |
+| `/regions setbiomebounds <biome> pos1` | Mark biome high corner |
+| `/regions setbiomebounds <biome> pos2` | Mark biome low corner |
+
+## Point commands
+
+Run at the target location or while looking at the target block.
+
+| Command | Effect |
+| --- | --- |
 | `/regions setspawn <biome>` | Mark current location as a team spawn |
-| `/regions setbiomebounds <biome>` | Define biome territory |
 | `/regions setconduit` | Mark ocean's conduit nexus |
 | `/regions setfurnace` | Mark nether's lifeline furnace |
 | `/regions setcomposter` | Mark plains composter |

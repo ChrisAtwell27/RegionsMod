@@ -8,12 +8,14 @@ One world with four biome regions (plains, mountain, nether, ocean) and a lobby 
 
 ## Register regions
 
-All commands are operator-only. Most require standing near or looking at the target block.
+All commands are operator-only. Point commands use the player's position or targeted block. Area commands use `pos1` and `pos2` run at opposite corners of the area.
 
 ```text
-/regions setlobby
+/regions setlobby pos1
+/regions setlobby pos2
+/regions setbiomebounds <biome> pos1
+/regions setbiomebounds <biome> pos2
 /regions setspawn <biome>
-/regions setbiomebounds <biome>
 /regions setconduit
 /regions setfurnace
 /regions setcomposter
@@ -21,6 +23,8 @@ All commands are operator-only. Most require standing near or looking at the tar
 /regions addoredeposit <ore> <time>
 /regions addmobdeposit <mob> <time>
 ```
+
+`pos1` marks the high corner (max X, Y, Z). `pos2` marks the low corner (min X, Y, Z). The area is the cuboid between them.
 
 All registered areas are mine and place protected.
 
