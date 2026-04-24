@@ -1,10 +1,8 @@
 # Classes
 
-Each team has 5 classes. On game start, every player picks one from a class-select menu.
+Each team has 6 classes. On game start, every player picks one from a class-select menu.
 
-Each class has a default weapon and one ability.
-
-Class details are defined in a later design pass.
+Each class has a default kit and one or more abilities. See per-region pages for the full design.
 
 ## Pages
 
