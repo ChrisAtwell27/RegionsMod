@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "regionsmod",
+	"version": "${version}",
+	"name": "Regions Mod",
+	"description": "Adds regions to Minecraft.",
+	"authors": [
+		"You"
+	],
+	"contact": {
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/regionsmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.regionsmod.RegionsMod"
+		],
+		"client": [
+			"com.regionsmod.client.RegionsModClient"
+		]
+	},
+	"mixins": [
+		"regionsmod.mixins.json",
+		{
+			"config": "regionsmod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
