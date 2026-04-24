@@ -13,19 +13,26 @@ Run at each corner. `pos1` is the high corner (max X, Y, Z). `pos2` is the low c
 | `/regions setbiomebounds <biome> pos1` | Mark biome high corner |
 | `/regions setbiomebounds <biome> pos2` | Mark biome low corner |
 
-## Point commands
+## Target commands
 
-Run at the target location or while looking at the target block.
+Run the command, then right-click the intended block or entity. The next right-click registers the target.
 
 | Command | Effect |
 | --- | --- |
-| `/regions setspawn <biome>` | Mark current location as a team spawn |
-| `/regions setconduit` | Mark ocean's conduit nexus |
-| `/regions setfurnace` | Mark nether's lifeline furnace |
-| `/regions setcomposter` | Mark plains composter |
-| `/regions settrader <biome>` | Mark a biome's trader |
-| `/regions addoredeposit <ore> <time>` | Register an ore deposit with regen time |
-| `/regions addmobdeposit <mob> <time>` | Register a mob deposit with spawn interval |
+| `/regions setconduit` | Register the next right-clicked block as the ocean conduit |
+| `/regions setfurnace` | Register the next right-clicked block as the nether furnace |
+| `/regions setcomposter` | Register the next right-clicked block as the plains composter |
+| `/regions settrader <biome>` | Register the next right-clicked entity as a biome's trader |
+| `/regions addoredeposit <time>` | Register the next right-clicked ore block as a deposit with regen time. Ore type inferred from the block. |
+| `/regions addmobdeposit <mob> <time>` | Register the next right-clicked block as a mob spawn point with spawn interval |
+
+## Position commands
+
+Run at the target position.
+
+| Command | Effect |
+| --- | --- |
+| `/regions setspawn <biome>` | Mark current position as a team spawn |
 
 ## Match control
 
