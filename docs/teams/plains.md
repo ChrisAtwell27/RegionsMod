@@ -22,6 +22,10 @@ Right-click the composter with a crop to convert the crop into emeralds. Only th
 
 Villager. Sells crops, food, and farming tools.
 
+## Mass event
+
+If plains permanently loses half its starting members (rounded down), three independent Pillager patrol squads spawn inside the biome and attack any non-plains player. See [Mass Events](../gameplay/mass-events.md).
+
 ## Classes
 
 See [Plains Classes](../classes/plains-classes.md).

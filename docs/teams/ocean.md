@@ -18,6 +18,10 @@ Water not adjacent to a heat source within 1–2 blocks freezes. Water without a
 
 Villager. Sells aquatic goods and water-related items.
 
+## Mass event
+
+If ocean permanently loses half its starting members (rounded down), stationary Elder Guardians spawn at every registered guardian spawn point. They cannot move, keep default HP, and attack any non-ocean player in range. See [Mass Events](../gameplay/mass-events.md).
+
 ## Classes
 
 See [Ocean Classes](../classes/ocean-classes.md).

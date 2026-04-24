@@ -18,6 +18,10 @@ Furnace burns fuel twice as fast.
 
 Piglin. Sells nether materials and fire-resistant gear.
 
+## Mass event
+
+If nether permanently loses half its starting members (rounded down), a stationary Wither spawns at the preset Wither spawn point. It keeps default HP, cannot move, and fires wither skulls at any non-nether player. See [Mass Events](../gameplay/mass-events.md).
+
 ## Classes
 
 See [Nether Classes](../classes/nether-classes.md).
