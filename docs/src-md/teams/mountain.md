@@ -18,7 +18,7 @@ If the timer expires without the condition met, every living dwarf loses 1 life.
 
 ## Passive
 
-None.
+Permanent Night Vision. Every dwarf sees in the dark for the whole match.
 
 ## Cold season effect
 

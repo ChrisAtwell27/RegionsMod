@@ -12,7 +12,7 @@ Permanent Water Breathing. Immune to drowning for the entire match.
 
 ## Cold season effect
 
-Water not adjacent to a heat source within 1–2 blocks freezes. Water without a nearby heat source damages any player standing in it.
+Water not adjacent to a heat source within 1–2 blocks freezes. Drowned spawn aggressively in the ocean biome's water and attack any non-ocean player. All players (including ocean) get Slowness I while standing in water — this is a global cold-season rule.
 
 ## Trader
 

@@ -6,7 +6,7 @@ const TEAMS = {
     color: 'var(--ocean)',
     lifeline: 'Conduit nexus (200 HP).',
     passive: 'None.',
-    cold: 'Water freezes without heat. Water without heat nearby damages anyone standing in it.',
+    cold: 'Water freezes without heat. Drowned spawn in ocean water and hunt any non-ocean player. All teams get Slowness I in water.',
     trader: 'Villager — aquatic goods, water-related gear.',
     mass: 'Stationary Elder Guardians spawn at preset points and attack any non-ocean player.',
     link: 'teams/ocean.html',
@@ -17,7 +17,7 @@ const TEAMS = {
     color: 'var(--nether)',
     lifeline: 'Furnace must stay burning.',
     passive: 'Permanent Fire Resistance. Immune to lava & fire for the whole match.',
-    cold: 'Lifeline furnace burns fuel at 2x speed.',
+    cold: 'Lifeline furnace burns fuel 2x. Cold water damages Nether players on contact.',
     trader: 'Piglin — nether materials, fire-resistant gear.',
     mass: 'A stationary Wither spawns at the preset point, firing skulls at any non-nether player.',
     link: 'teams/nether.html',
@@ -38,7 +38,7 @@ const TEAMS = {
     tag: 'GRAY · BLOOD TRIBUTE',
     color: 'var(--mountain)',
     lifeline: 'Blood Tribute each cold season. Miss it, every dwarf loses 1 life.',
-    passive: 'None.',
+    passive: 'Permanent Night Vision. Every dwarf sees in the dark for the whole match.',
     cold: 'Blood Tribute active. Deposit cooldowns increase. Some deposits flood or freeze.',
     trader: 'Villager — ores, ingots, mining tools.',
     mass: 'A single Warden spawns (100 HP, never aggros dwarves) and attacks any non-mountain player.',
@@ -199,10 +199,10 @@ function render(min) {
   // effect copy per phase
   const isCold = p.kind === 'cold' || p.kind === 'permanent';
   effects.ocean.textContent = isCold
-    ? 'Water freezes without nearby heat. Unheated water damages anyone standing in it.'
+    ? 'Water freezes without heat. Drowned spawn in ocean water and hunt non-ocean players.'
     : 'Water is warm. Conduit holds the line.';
   effects.nether.textContent = isCold
-    ? 'Furnace burns fuel 2x as fast. Feed it.'
+    ? 'Furnace burns fuel 2x as fast. Cold water now damages Nether players.'
     : 'Furnace burns normally. Fire resistance passive always on.';
   effects.plains.textContent = isCold
     ? 'Crops stop growing without heat. Farmer\u2019s instant-regrow bypasses this.'

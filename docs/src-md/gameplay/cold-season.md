@@ -6,16 +6,17 @@ A 15-minute Cold Season begins every 15 minutes. First Cold Season starts at 15:
 
 - PVP toggles on. Permanent from Cold 2 onward.
 - Mountain Blood Tribute timer starts.
+- Any player standing in water takes **Slowness I** for as long as they remain in it, regardless of team or biome.
 
 ## Per-biome effects
 
 ### Ocean
 
-Water not adjacent to a heat source within 1–2 blocks freezes. Water without a nearby heat source damages any player standing in it.
+Water not adjacent to a heat source within 1–2 blocks freezes. Drowned spawn aggressively in the ocean biome's water and attack any non-ocean player.
 
 ### Nether
 
-Lifeline furnace burns fuel twice as fast.
+Lifeline furnace burns fuel twice as fast. Cold water (water not adjacent to a heat source within 1–2 blocks) damages Nether players on contact — fire-aspect weakness. Other teams are not damaged by cold water, only slowed.
 
 ### Plains
 

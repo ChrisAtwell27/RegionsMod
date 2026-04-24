@@ -12,7 +12,7 @@ Permanent Fire Resistance. Immune to lava and fire damage for the entire match.
 
 ## Cold season effect
 
-Furnace burns fuel twice as fast.
+Furnace burns fuel twice as fast. Cold water (water not adjacent to a heat source within 1–2 blocks) damages Nether players on contact — fire-aspect weakness. Nether players also take Slowness I while standing in any water, like every team during cold season.
 
 ## Trader
 
