@@ -4,7 +4,8 @@
 build/
 out/
 classes/
-!docs/classes/
+!docs/**/classes/
+!docs/**/classes/**
 
 # eclipse
 

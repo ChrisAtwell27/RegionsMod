@@ -1,0 +1,105 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Plains Classes — RegionsMOBA</title>
+<link rel="stylesheet" href="../assets/theme.css"/>
+</head>
+<body data-section="classes" data-active="plains-classes">
+
+<main class="doc-layout">
+  <aside class="doc-sidebar"></aside>
+
+  <article class="doc-main">
+    <nav class="doc-breadcrumb">
+      <a href="../index.html">Home</a>
+      <span class="sep">/</span>
+      <span>classes</span>
+      <span class="sep">/</span>
+      <span>Plains Classes</span>
+    </nav>
+
+    <header class="block bg-plains" style="padding:28px;margin-bottom:32px;color:var(--paper);">
+      <div style="font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:0.14em;opacity:0.9;margin-bottom:8px;">
+        classes
+      </div>
+      <h1 style="font-family:var(--pixel);font-size:30px;line-height:1.15;color:var(--paper);">Plains Classes</h1>
+    </header>
+
+    <div class="doc-toc"><h4>On this page</h4><ol></ol></div>
+
+    <div class="md-body">
+<p>Six classes cover Plains' core roles: ranged DPS, stealth, economy, support caster, melee disruptor, and mobility.</p>
+<div style="overflow-x:auto;"><table><thead><tr><th>#</th><th>Name</th><th>Weapon</th><th>Key Ability</th></tr></thead><tbody><tr><td>1</td><td>Archer</td><td>Punch I bow</td><td>Rain of Arrows + Poison Shot</td></tr><tr><td>2</td><td>Spy</td><td>Golden sword</td><td>Vanish + Flee clone</td></tr><tr><td>3</td><td>Farmer</td><td>Wooden tools + stone hoe</td><td>Feast + Famine</td></tr><tr><td>4</td><td>Bard</td><td>Wooden tools</td><td>Buffbox (4 songs)</td></tr><tr><td>5</td><td>Lumberjack</td><td>Efficiency I stone axe</td><td>Brute Force</td></tr><tr><td>6</td><td>Scout</td><td>Golden sword + Grapple</td><td>Grapple hook traversal</td></tr></tbody></table></div>
+<hr/>
+<h2>Archer</h2>
+<p>Spawns with a Punch I bow, the <strong>Arrow of Infinity</strong>, and a Potion of Instant Health I.</p>
+<h3>Passive</h3>
+<ul><li>+1 base damage with any bow.</li><li>Never runs out of arrows while the Arrow of Infinity is in inventory, regardless of which bow is held.</li><li>Can craft arrows without a feather — yields 3 arrows per craft instead of the usual 4.</li></ul>
+<h3>Bow Specials</h3>
+<p>Left-click any bow to cycle between two special attacks. Firing a special consumes only 1 arrow.</p>
+<p><strong>Rain of Arrows</strong> (one left-click)</p>
+<ul><li>A circle of particles shows where the volley will land.</li><li>On firing, a ring of arrows drops inside that circle.</li><li><strong>30-second cooldown.</strong></li></ul>
+<p><strong>Poison Shot</strong> (two left-clicks)</p>
+<ul><li>On impact, spawns a lingering poison cloud that poisons enemies walking through it.</li><li><strong>50-second cooldown.</strong></li></ul>
+<p>Damage from both specials is gated by PVP windows (Cold Season / post-2-seasons). Arrows do not hurt teammates or neutral players.</p>
+<hr/>
+<h2>Spy</h2>
+<p>Spawns with a golden sword.</p>
+<h3>Vanish</h3>
+<ul><li>Sneaking while still for ~2 seconds turns the Spy fully invisible — armor, held item, and particles all hidden.</li><li>Can move up to ~3 blocks while vanished before breaking invisibility.</li><li>Unvanishes instantly on: breaking a block, using a bow, eating, or any other action.</li><li>Enemies can also unvanish a Spy by hitting them or right-clicking them.</li></ul>
+<h3>Flee</h3>
+<p>Right-click to spawn a decoy clone at the Spy's position and grant the Spy 6 seconds of full invisibility (armor hidden). The clone wanders and punches nearby enemies as a distraction.</p>
+<ul><li><strong>40-second cooldown.</strong></li><li>Flee cannot be used within 20 blocks of an enemy <strong>lifeline block</strong> — specifically Ocean's Conduit, Nether's Furnace, or Plains' Composter. Mountain has no lifeline block, so Flee works freely inside the mountain biome.</li></ul>
+<h3>Backstab</h3>
+<p>Attacking an enemy from behind deals +1 damage.</p>
+<hr/>
+<h2>Farmer</h2>
+<p>Spawns with a set of wooden tools including a shovel, a stone hoe, 15 bonemeal, a golden carrot named <strong>Feast</strong>, and a dead bush named <strong>Famine</strong>.</p>
+<h3>Harvest Passive</h3>
+<ul><li>Breaking tall grass has a chance to drop useful items.</li><li>Crops harvested by the Farmer instantly regrow — the instant-regrow bypasses the Cold Season crop-freeze, making the Farmer a major asset during cold snaps.</li><li>While harvesting crops, each break has a 1/100 chance for one of: Gold Ore, Iron Ore, Coal, Books, Bottles of Enchanting, Gold Nuggets, or Iron Hoes.</li><li>Apples drop at 1/400.</li></ul>
+<h3>Feast</h3>
+<p>Right-click the golden carrot.</p>
+<ul><li>Fully refills hunger for the Farmer and all teammates within 13 blocks, plus 4 saturation on top.</li><li>Clears the Hunger potion effect on all affected players.</li><li><strong>30-second cooldown.</strong></li></ul>
+<h3>Famine</h3>
+<p>Right-click the dead bush.</p>
+<ul><li>Applies Hunger 20 for 30 seconds to every enemy within 13 blocks, draining them to ~2.5 hunger bars.</li><li><strong>90-second cooldown.</strong></li><li>Famine can only be cast during a PVP window (Cold Season, or after PVP has gone permanent). Outside PVP, right-clicking does nothing and does not consume the cooldown.</li></ul>
+<h3>Food Synergy</h3>
+<p>30% chance when eating any food to restore an extra 2 HP and gain 2 saturation.</p>
+<hr/>
+<h2>Bard</h2>
+<p>Spawns with a set of wooden tools and a <strong>Buffbox</strong>. Place it and right-click to select from 4 songs.</p>
+<div style="overflow-x:auto;"><table><thead><tr><th>Song</th><th>Target</th><th>Effect</th><th>Duration</th></tr></thead><tbody><tr><td>Invigorate</td><td>Teammates</td><td>Regeneration I</td><td>20 s</td></tr><tr><td>Enlighten</td><td>Teammates</td><td>Speed I</td><td>25 s</td></tr><tr><td>Intimidate</td><td>Enemies</td><td>Weakness III</td><td>20 s</td></tr><tr><td>Shackle</td><td>Enemies</td><td>Slowness II</td><td>15 s</td></tr></tbody></table></div>
+<ul><li>Affects players within 15 blocks, shown by expanding note particles.</li><li>Songs pass through walls and loop continuously.</li><li>Switching songs has a <strong>15-second cooldown</strong>.</li><li>Enemy-target songs (Intimidate, Shackle) only apply during PVP windows. Outside PVP, the Buffbox still plays them — particles and sound fire — but no effect lands on non-PVP-legal targets. Teammate-target songs always apply.</li></ul>
+<h3>Buffbox</h3>
+<ul><li>Can be destroyed manually by the owner or by an enemy.</li><li>Can be recalled manually by the owner.</li><li>Teammates cannot destroy it.</li><li>If the Bard recalls or breaks their own Buffbox, re-placement cooldown is <strong>10 seconds</strong>.</li><li>If an enemy breaks it, re-placement cooldown is <strong>30 seconds</strong>.</li></ul>
+<hr/>
+<h2>Lumberjack</h2>
+<p>Spawns with an Efficiency I stone axe and a brick block called <strong>Brute Force</strong>.</p>
+<h3>Logging Passive</h3>
+<ul><li>+0.5 hearts bonus damage with any axe.</li><li>80% chance to get an extra log when mining a log block.</li></ul>
+<h3>Brute Force</h3>
+<p>Right-click the brick block. For 15 seconds, each axe hit on an enemy deals bonus durability damage to their armor.</p>
+<div style="overflow-x:auto;"><table><thead><tr><th>Axe Tier</th><th>Bonus Armor Durability per Hit</th></tr></thead><tbody><tr><td>Wood / Gold</td><td>3</td></tr><tr><td>Stone</td><td>6</td></tr><tr><td>Iron</td><td>9</td></tr><tr><td>Diamond / Netherite</td><td>12</td></tr></tbody></table></div>
+<ul><li><strong>45-second cooldown.</strong></li><li>Brute Force can be toggled on outside PVP windows, but armor-damage only ticks when the axe actually lands a hit on a PVP-legal target.</li></ul>
+<hr/>
+<h2>Scout</h2>
+<p>Spawns with a golden sword and a <strong>Grapple</strong>.</p>
+<h3>Grapple</h3>
+<p>Right-click the grapple to cast. The hook attaches to the first solid block it hits. Right-click again to reel in, launching the Scout toward the anchor.</p>
+<ul><li>Launch strength scales with the vertical distance between the Scout and the hook — the higher the hook is above the player, the stronger the pull.</li><li>While the grapple is held in the main hand, all fall damage is halved.</li></ul>
+<h3>Restrictions</h3>
+<p>The grapple cannot be used while:</p>
+<ul><li>On fire.</li><li>Under the Slowness effect.</li><li>Immobilized (e.g., Ocean Immobilizer's stun).</li><li>Held in the off-hand slot.</li></ul>
+<h3>Combat Tag</h3>
+<p>Being hit by an enemy applies a 5-second <strong>combat tag</strong> during which the grapple cannot be used.</p>
+<p>The combat tag only arms during PVP windows, since enemy hits cannot land outside them. The grapple itself has no PVP gating — it is a pure traversal tool.</p>
+    </div>
+  </article>
+</main>
+
+<script src="../assets/nav.js"></script>
+<script src="../assets/docs.js"></script>
+</body>
+</html>

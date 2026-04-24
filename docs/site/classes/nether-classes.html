@@ -1,0 +1,117 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Nether Classes — RegionsMOBA</title>
+<link rel="stylesheet" href="../assets/theme.css"/>
+</head>
+<body data-section="classes" data-active="nether-classes">
+
+<main class="doc-layout">
+  <aside class="doc-sidebar"></aside>
+
+  <article class="doc-main">
+    <nav class="doc-breadcrumb">
+      <a href="../index.html">Home</a>
+      <span class="sep">/</span>
+      <span>classes</span>
+      <span class="sep">/</span>
+      <span>Nether Classes</span>
+    </nav>
+
+    <header class="block bg-nether" style="padding:28px;margin-bottom:32px;color:var(--paper);">
+      <div style="font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:0.14em;opacity:0.9;margin-bottom:8px;">
+        classes
+      </div>
+      <h1 style="font-family:var(--pixel);font-size:30px;line-height:1.15;color:var(--paper);">Nether Classes</h1>
+    </header>
+
+    <div class="doc-toc"><h4>On this page</h4><ol></ol></div>
+
+    <div class="md-body">
+<p>Six classes cover Nether's core roles: brewing, XP economy, debuff caster, AoE caster, stealth assassin, and team mobility.</p>
+<div style="overflow-x:auto;"><table><thead><tr><th>#</th><th>Name</th><th>Weapon</th><th>Key Ability</th></tr></thead><tbody><tr><td>1</td><td>Alchemist</td><td>Wooden tools + leather armor</td><td>Brewing Stand + Tome + Enhanced Potions</td></tr><tr><td>2</td><td>Enchanter</td><td>Golden sword + wooden tools</td><td>Intensifier + XP-damage shield</td></tr><tr><td>3</td><td>Bloodmage</td><td>Stone sword</td><td>Corrupt + Bloodcursed Terraform</td></tr><tr><td>4</td><td>Wizard</td><td>Wand + Spellbook</td><td>5 spells on a shared cooldown</td></tr><tr><td>5</td><td>Vampire</td><td>Stone sword</td><td>Blood Sense + Insidious Dispatch + HP steal</td></tr><tr><td>6</td><td>Rift Walker</td><td>Basic tools + Blaze Rod</td><td>Group teleport</td></tr></tbody></table></div>
+<p>All Nether players have permanent Fire Resistance (team passive). Several class interactions below reference this — most notably Wizard's Inferno spell, which is useless against a Nether target.</p>
+<hr/>
+<h2>Alchemist</h2>
+<p>Spawns with wooden tools, a full set of leather armor, an <strong>Alchemist's Brewing Stand</strong>, and an <strong>Alchemist's Tome</strong>.</p>
+<h3>Alchemist's Brewing Stand</h3>
+<ul><li>Place to use as a private brewing stand — only the Alchemist can open it.</li><li>Brewing time is halved in this stand.</li><li>Enemies break it instantly with left-click (no tool required).</li></ul>
+<h3>Alchemist's Tome</h3>
+<p>Right-click to receive a random potion ingredient. <strong>90-second cooldown.</strong> Left-click to read the Enhanced Potion recipes.</p>
+<div style="overflow-x:auto;"><table><thead><tr><th>Tier</th><th>Chance</th><th>Items</th></tr></thead><tbody><tr><td>Very Common</td><td>32%</td><td>Nether Wart, Fermented Spider Eye</td></tr><tr><td>Common</td><td>28%</td><td>Glistering Melon, Golden Carrot, Sugar, Spider Eye, Magma Cream</td></tr><tr><td>Uncommon</td><td>15%</td><td>Glowstone Dust</td></tr><tr><td>Rare</td><td>7%</td><td>Ghast Tear</td></tr><tr><td>Extremely Rare</td><td>3%</td><td>Blaze Powder, Gunpowder</td></tr><tr><td>Junk</td><td>15%</td><td>Rotten Flesh, Poisonous Potato, Snowball, String</td></tr></tbody></table></div>
+<p>Gunpowder only becomes available <strong>after PVP has gone permanent</strong> (i.e., after the second Cold Season).</p>
+<h3>Enhanced Brewing</h3>
+<p>Brew in a <strong>water-filled cauldron</strong> instead of a brewing stand.</p>
+<ul><li>Enhanced potions are <strong>class-bound</strong> — the Alchemist cannot switch class before drinking / splashing the potion.</li><li>Each brew consumes water from the cauldron; keep a water supply nearby.</li><li>Teammates cannot pick up items the Alchemist has thrown into the cauldron. Enemies can.</li><li>Sneak on the cauldron to retrieve thrown items.</li></ul>
+<h4>Recipe basics</h4>
+<ol><li>Throw in a <strong>Dusted</strong> potion (tier II potion, glowstone- or redstone-augmented).</li><li>Throw in its base ingredient (blaze powder, sugar, ghast tear, etc.).</li><li>Optional: throw in gunpowder to turn it into a splash potion (teammates only receive level II from splash).</li></ol>
+<hr/>
+<h2>Enchanter</h2>
+<p>Spawns with a golden sword, a set of wooden tools, and a lapis lazuli called <strong>Intensifier</strong>.</p>
+<h3>XP Passive</h3>
+<ul><li>Enchanter gains <strong>2x XP</strong> from all sources.</li><li>When the Enchanter drops to 7 HP or lower, incoming damage consumes XP levels instead of health, up to the available XP pool.</li></ul>
+<h3>Intensifier</h3>
+<p>Right-click the lapis lazuli.</p>
+<ul><li>Teammates within 10 blocks gain <strong>1.25x XP</strong> for 30 seconds.</li><li><strong>120-second cooldown.</strong></li></ul>
+<h3>Enchantment Boost</h3>
+<p>When enchanting an item at a vanilla enchanting table, there's a 30% chance to increase one of the rolled enchantments by +1 level (capped at the vanilla maximum).</p>
+<p>The Enchanter's kit is entirely economic/defensive — fully usable in peace windows.</p>
+<hr/>
+<h2>Bloodmage</h2>
+<p>Spawns with a stone sword, a fermented spider eye called <strong>Corrupt</strong>, and a Crimson Hyphae block called <strong>Bloodcursed Terraform</strong>.</p>
+<h3>Poison-on-Hit</h3>
+<p>25% chance on every melee hit to inflict Poison for 2 seconds (1 damage total).</p>
+<h3>Corrupt</h3>
+<p>Right-click the fermented spider eye.</p>
+<ul><li>All enemies within 4 blocks lose 2 hearts of max HP and are inflicted with Wither for 5 seconds (total 3 damage from Wither).</li><li><strong>60-second cooldown.</strong></li></ul>
+<h3>Bloodcursed Terraform</h3>
+<p>Right-click the Crimson Hyphae to place the curse field. For 30 seconds, the surrounding 8-block radius is reskinned as nether blocks and inflicts enemies inside with:</p>
+<div style="overflow-x:auto;"><table><thead><tr><th>Effect</th><th>Level</th><th>Duration</th></tr></thead><tbody><tr><td>Wither</td><td>II</td><td>5 s</td></tr><tr><td>Blindness</td><td>I</td><td>10 s</td></tr><tr><td>Hunger</td><td>III</td><td>10 s</td></tr></tbody></table></div>
+<ul><li>Enemies already in the radius at placement are immune for 10 seconds (prevents flash-trap).</li><li><strong>120-second cooldown.</strong></li><li>Cannot be placed within 35 blocks of any <strong>lifeline block</strong> — Ocean Conduit, Nether Furnace, or Plains Composter (including the friendly Nether Furnace, to prevent trap-stacking on your own lifeline). Mountain has no block lifeline, so there is no placement restriction inside the mountain biome itself.</li><li>Damage and debuff effects are PVP-gated. Placing the curse field outside a PVP window still consumes the cooldown.</li></ul>
+<hr/>
+<h2>Wizard</h2>
+<p>Spawns with wooden tools, a <strong>Wand</strong>, and a <strong>Spellbook</strong>.</p>
+<ul><li>Left-click the wand (or open the Spellbook) to choose a spell.</li><li>Right-click the wand to cast.</li><li>Spells are instantaneous on cast.</li><li><strong>Global 15-second cooldown</strong> after any cast (blocks all spells, not just the one used).</li></ul>
+<h3>Spells</h3>
+<div style="overflow-x:auto;"><table><thead><tr><th>Spell</th><th>Cooldown</th><th>Radius</th><th>Effect</th></tr></thead><tbody><tr><td>Inferno</td><td>50 s</td><td>1 block</td><td>Ignites enemies for 10 s; places a fire block at their feet.</td></tr><tr><td>Void Bolt</td><td>50 s</td><td>1 block</td><td>Wither II for 5 s.</td></tr><tr><td>Arcane Bolt</td><td>30 s</td><td>1 block</td><td>7 damage AoE (reduced by armor). Counts as a melee kill.</td></tr><tr><td>Glacial Nova</td><td>35 s</td><td>2 blocks</td><td>Slowness III + Mining Fatigue I for 10 s.</td></tr><tr><td>Whirlwind</td><td>25 s</td><td>3 blocks</td><td>Knocks enemies and the Wizard away; 5 s of no fall damage.</td></tr></tbody></table></div>
+<p>Inferno is <strong>completely ineffective against other Nether players</strong> because of the team's permanent Fire Resistance.</p>
+<p>Arcane Bolt <strong>counts as a melee kill</strong> for the Mountain Berserker's 15→20 HP scaling (which normally requires melee-only kills).</p>
+<p>All offensive spells are PVP-gated. Whirlwind's self-knockback and fall-damage immunity remain usable in peace for mobility.</p>
+<hr/>
+<h2>Vampire</h2>
+<p>Spawns with a stone sword, a Potion of Night Vision, a music disc called <strong>Blood Sense</strong>, and a black dye called <strong>Insidious Dispatch</strong>.</p>
+<h3>Passive</h3>
+<ul><li>Deals 1.25x melee damage.</li><li>During the <strong>day</strong> (Minecraft daytime), 15% chance on melee hit to steal 1 HP (heals self).</li><li>During the <strong>night</strong>, the steal chance increases to 30%.</li><li>On death, spawns a bat named after the Vampire for 8 seconds (flavor effect).</li></ul>
+<p>Day/night is tracked by vanilla world time, independent of Cold Season and PVP windows.</p>
+<h3>Blood Sense</h3>
+<p>Right-click the music disc.</p>
+<ul><li>Reveals all enemies within a 10-block horizontal / 8-block vertical radius to the Vampire only.</li><li>Lasts 3 seconds. <strong>3-second cooldown.</strong></li><li>Does <strong>not</strong> reveal:</li><li>Invisible enemies (potion or class-based).</li><li>Vanished Plains Spies.</li><li>Enemies who enter the radius after the ability was cast.</li></ul>
+<h3>Insidious Dispatch</h3>
+<p>Right-click the black dye.</p>
+<ul><li>Teleports the Vampire to directly behind a targeted enemy.</li><li><strong>40-second cooldown.</strong></li><li>30-block max range.</li><li>Requires line of sight.</li><li>The target must <strong>not</strong> be facing the Vampire — ability silently fails if they are.</li><li>Outside a PVP window, the ability fails to lock on to a target and the cooldown is not consumed.</li></ul>
+<hr/>
+<h2>Rift Walker</h2>
+<p>Spawns with basic tools and a <strong>Blaze Rod</strong> used to open rifts.</p>
+<h3>Opening a Rift</h3>
+<p>Right-click the blaze rod to open a destination list:</p>
+<ul><li>Every current Nether teammate (teleport directly to them).</li><li>Each of the <strong>three enemy region spawn markers</strong> (Ocean, Plains, Mountain).</li><li>The <strong>Nether team spawn</strong>.</li></ul>
+<p>Selecting a destination starts a <strong>10-second countdown</strong>. Green rift particles appear around the Rift Walker; this is the rift area.</p>
+<h3>Countdown and Travel</h3>
+<ul><li>Leaving the rift area during the countdown cancels the rift.</li><li>Left-click the blaze rod during the countdown to cancel.</li><li>At countdown end, the Rift Walker teleports. Any teammate <strong>sneaking inside the rift area at the moment of travel</strong> is pulled along.</li><li>After a successful teleport, every traveller (including the Rift Walker) gets <strong>Weakness II for 5 seconds</strong>.</li></ul>
+<h3>Teleport Targeting Rules</h3>
+<p>A teammate <strong>cannot be targeted as a destination</strong> if they are:</p>
+<ul><li>Within range of any <strong>enemy lifeline block</strong> — Ocean Conduit, Nether Furnace, or Plains Composter.</li><li>Invisible (potion-based).</li><li>Vanished (Plains Spy class ability).</li></ul>
+<h3>Cooldown</h3>
+<p>After a successful teleport: <strong>30 seconds × number of players transported</strong> (including the Rift Walker).</p>
+<ul><li>Maximum party size: <strong>4 players</strong> (Rift Walker + 3 teammates).</li><li>Cancelled rifts do not consume the cooldown.</li></ul>
+<p>Rifting is mobility/utility; teleporting into an enemy biome during peace is legal.</p>
+    </div>
+  </article>
+</main>
+
+<script src="../assets/nav.js"></script>
+<script src="../assets/docs.js"></script>
+</body>
+</html>

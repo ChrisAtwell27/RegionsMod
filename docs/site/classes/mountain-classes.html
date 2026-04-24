@@ -1,0 +1,110 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Mountain Classes — RegionsMOBA</title>
+<link rel="stylesheet" href="../assets/theme.css"/>
+</head>
+<body data-section="classes" data-active="mountain-classes">
+
+<main class="doc-layout">
+  <aside class="doc-sidebar"></aside>
+
+  <article class="doc-main">
+    <nav class="doc-breadcrumb">
+      <a href="../index.html">Home</a>
+      <span class="sep">/</span>
+      <span>classes</span>
+      <span class="sep">/</span>
+      <span>Mountain Classes</span>
+    </nav>
+
+    <header class="block bg-mountain" style="padding:28px;margin-bottom:32px;color:var(--paper);">
+      <div style="font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:0.14em;opacity:0.9;margin-bottom:8px;">
+        classes
+      </div>
+      <h1 style="font-family:var(--pixel);font-size:30px;line-height:1.15;color:var(--paper);">Mountain Classes</h1>
+    </header>
+
+    <div class="doc-toc"><h4>On this page</h4><ol></ol></div>
+
+    <div class="md-body">
+<p>Six classes cover Mountain's core roles: wall-builder, melee DPS, tank, miner, utility caster, and mobility.</p>
+<div style="overflow-x:auto;"><table><thead><tr><th>#</th><th>Name</th><th>Weapon</th><th>Key Ability</th></tr></thead><tbody><tr><td>1</td><td>Builder</td><td>Wooden tools</td><td>Resource Drop + Replication Cache</td></tr><tr><td>2</td><td>Warrior</td><td>Wooden sword</td><td>Frenzy</td></tr><tr><td>3</td><td>Berserker</td><td>Stone sword</td><td>Max-HP scaling + Unbreakable Will</td></tr><tr><td>4</td><td>Miner</td><td>Stone pickaxe (Eff I / Unb I)</td><td>Gold Rush</td></tr><tr><td>5</td><td>Tinkerer</td><td>Stone sword</td><td>PowerPads + Disenchanting</td></tr><tr><td>6</td><td>Acrobat</td><td>Bow + 6 arrows</td><td>Double jump + fall immunity</td></tr></tbody></table></div>
+<hr/>
+<h2>Builder</h2>
+<p>Spawns with a full set of wooden tools, a book titled <strong>Resource Drop</strong>, and a composter called <strong>Replication Cache</strong>.</p>
+<h3>Resource Drop</h3>
+<p>Right-click to open a chest menu containing a random mix of blocks. <strong>90-second cooldown.</strong></p>
+<div style="overflow-x:auto;"><table><thead><tr><th>Material</th><th>Max Amount</th></tr></thead><tbody><tr><td>Spruce Planks</td><td>70</td></tr><tr><td>Cobblestone</td><td>60</td></tr><tr><td>Stone</td><td>50</td></tr><tr><td>Stone Bricks</td><td>40</td></tr><tr><td>Wool</td><td>30</td></tr><tr><td>Glass</td><td>20</td></tr><tr><td>Spruce Stairs</td><td>20</td></tr><tr><td>Spruce Fence</td><td>10</td></tr><tr><td>Iron Bars</td><td>10</td></tr><tr><td>Torch</td><td>5</td></tr></tbody></table></div>
+<h3>Replication Cache</h3>
+<p>Place on the ground to start replicating blocks. Left-click with a block to insert it.</p>
+<p>Replicable blocks: Glass (all colors), Planks (all wood types), Stone, Stone Bricks, Wool (all colors), Cobblestone, Dirt, Grass Block, Concrete (all colors), Terracotta, Stained Glass (all colors), Deepslate.</p>
+<div style="overflow-x:auto;"><table><thead><tr><th>Action</th><th>Result</th></tr></thead><tbody><tr><td>Left-click</td><td>View items inside</td></tr><tr><td>Shift + Left-click</td><td>Replace current item (deletes all replicated items)</td></tr><tr><td>Right-click</td><td>Collect a stack of replicated items</td></tr><tr><td>Shift + Right-click</td><td>Collect all replicated items (excess sent to stash for 60 seconds)</td></tr></tbody></table></div>
+<p>Produces 10 blocks every 3 seconds, max 960 blocks held (15 stacks). When broken, incurs a 45-second cooldown.</p>
+<h3>Passive</h3>
+<p>The Builder gets 2 XP for about every 1.5 seconds of continuous block placement.</p>
+<hr/>
+<h2>Warrior</h2>
+<p>Spawns with a wooden sword, a Potion of Instant Health I, and blaze powder labelled <strong>Frenzy</strong>. The Warrior deals +1 melee damage passively.</p>
+<h3>Frenzy</h3>
+<p>Right-click to activate for <strong>12 seconds</strong>. <strong>60-second cooldown.</strong></p>
+<ul><li>+1 additional melee damage (stacks with the passive, +2 total).</li><li>Speed I for the duration.</li><li>Heals 2 HP every 4 seconds, up to 6 HP total.</li><li>Takes 25% more damage while active.</li></ul>
+<p>Frenzy can only be activated during a Cold Season (when PVP is on) or after PVP has gone permanent. Triggering outside a PVP window consumes the cooldown but only grants the Speed I and heal portions (no damage bonus, no damage penalty).</p>
+<p>Killing any enemy during Frenzy reduces the remaining cooldown by 10 seconds on expiry.</p>
+<hr/>
+<h2>Berserker</h2>
+<p>Spawns with a stone sword and a Netherite Ingot called <strong>Unbreakable Will</strong>.</p>
+<h3>Heart Stacking</h3>
+<ul><li>Killing enemies grants +1 max heart, up to 15 hearts total.</li><li>From 15 → 20, only melee kills count, and each kill grants +½ heart (10 melee kills to cap).</li><li>Dying removes 5 hearts (25 HP).</li><li>Hearts persist across class change and disconnection. Dying on a non-Berserker class still removes 5 Berserker hearts.</li></ul>
+<p>Enemy deaths <em>inside the mountain biome</em> (any cause, any team) count as half-heart kills toward the Berserker's pool.</p>
+<h3>Unbreakable Will</h3>
+<p>Right-click the ingot.</p>
+<ul><li>Grants 20 seconds of Speed I.</li><li>Full immunity to knockback and movement-impairing effects (Slowness, Levitation, Slow Falling, Blindness, Nausea) for the duration.</li><li><strong>65-second cooldown.</strong></li></ul>
+<h3>Armor-Difference Damage</h3>
+<p>The Berserker deals more damage to better-armored enemies.</p>
+<pre><code class="lang-text">difference = victimArmorValue - attackerArmorValue   (both clamped to 20)
+finalDamage = damageDealt + (damageDealt * difference / 200.0)</code></pre>
+<p><code>damageDealt</code> is Minecraft's post-modifier damage (potions, enchantments included).</p>
+<hr/>
+<h2>Miner</h2>
+<p>Spawns with an Efficiency I / Unbreaking I stone pickaxe called <strong>Miner's Passion</strong>, and a gold nugget called <strong>Gold Rush</strong>.</p>
+<h3>Double-Ore Passive</h3>
+<p>Every ore mined has a 67% chance to yield two.</p>
+<ul><li>Affected ores: Iron, Gold, Coal, Diamond.</li></ul>
+<h3>Gold Rush</h3>
+<p>Right-click to activate. Lasts <strong>10 seconds</strong>. <strong>60-second cooldown.</strong></p>
+<ul><li>Ore drops boosted to 100% double, with a 67% chance of triple.</li><li>20% chance per ore for 1 bonus coal.</li><li>Mountain ore deposits ignore the Cold Season cooldown increase while Gold Rush is active.</li></ul>
+<h3>Blast Furnace Drops</h3>
+<ul><li>The first ore mined drops a Blast Furnace.</li><li>Every 16 ores received (not mined) drops another Blast Furnace.</li></ul>
+<hr/>
+<h2>Tinkerer</h2>
+<p>Spawns with a stone sword, a Speed I PowerPad, a Haste I PowerPad, and 10 undroppable books.</p>
+<h3>PowerPads</h3>
+<p>Place a PowerPad block; a pressure plate appears on top. Stepping on it (self or teammate) grants a buff.</p>
+<div style="overflow-x:auto;"><table><thead><tr><th>Block</th><th>Effect</th><th>Duration</th></tr></thead><tbody><tr><td>Redstone Block</td><td>Speed I</td><td>45 s</td></tr><tr><td>Coal Block</td><td>Haste I</td><td>45 s</td></tr><tr><td>Diamond Block</td><td>Speed II</td><td>20 s</td></tr><tr><td>Gold Block</td><td>Haste II</td><td>15 s</td></tr><tr><td>Deepslate Block</td><td>Absorption I</td><td>20 s</td></tr></tbody></table></div>
+<ul><li>Spawn with Redstone and Coal pads only. The other three are crafted from their block material as you mine.</li><li>Stepping on a pad refreshes its buff to full duration.</li><li>A higher-level buff is not replaced by a lower-level pad of the same family until it expires.</li><li>You get XP each time a teammate receives a new buff from one of your pads.</li><li>Pads last until broken. When broken by an enemy, the block fragments into 8 items (4 to the owner, 4 to the breaker).</li></ul>
+<h3>Disenchanting</h3>
+<p>The 10 spawn books disenchant non-armor items at full durability. Place the enchanted item and one book anywhere in the crafting grid; the enchantment moves to the book and can be transferred via anvil at XP cost.</p>
+<p>Armor cannot be disenchanted.</p>
+<hr/>
+<h2>Acrobat</h2>
+<p>Spawns with wooden tools, a bow, and 6 arrows.</p>
+<h3>Double Jump</h3>
+<p>Double-tap jump in mid-air to leap upward.</p>
+<ul><li>Reaches up to 6 blocks above the start point.</li><li><strong>10-second cooldown.</strong></li></ul>
+<h3>Fall Immunity</h3>
+<p>Takes no fall damage at any height.</p>
+<h3>Stamina Passive</h3>
+<p>Hunger cannot drop below <strong>3.5 bars</strong> (7 half-units). Hunger damage is therefore impossible, and sprint is always available.</p>
+<p>The hunger floor <strong>counters Plains Farmer's Famine ability</strong> (Hunger 20 → drain to 2.5 bars); on an Acrobat, Famine bottoms out at 3.5 bars instead.</p>
+<p>All Acrobat abilities are self-mobility and work in every phase (no PVP gating).</p>
+    </div>
+  </article>
+</main>
+
+<script src="../assets/nav.js"></script>
+<script src="../assets/docs.js"></script>
+</body>
+</html>
