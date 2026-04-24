@@ -3,7 +3,8 @@ site_description: Minigame-style Minecraft mod where four asymmetric nations com
 site_url: https://chrisatwell27.github.io/RegionsMOBA/
 repo_url: https://github.com/ChrisAtwell27/RegionsMOBA
 repo_name: ChrisAtwell27/RegionsMOBA
-edit_uri: edit/main/docs/
+edit_uri: edit/main/docs/src-md/
+docs_dir: docs/src-md
 
 theme:
   name: material

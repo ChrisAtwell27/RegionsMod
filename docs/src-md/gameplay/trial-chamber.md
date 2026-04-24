@@ -28,6 +28,10 @@ Loot varies per wave. Typical drops:
 
 Potion buffs are applied to every living member of the winning team. Item drops appear inside the chamber.
 
+## PVP
+
+PVP is always on inside the chamber bounds, regardless of season or phase. This overrides the global PVP flag during warm seasons. Leaving the chamber returns the player to the normal PVP state for the current phase.
+
 ## Block protection
 
 No blocks can be broken inside the chamber bounds. This applies to every team, including operators during a scored match. Trial spawners, structural blocks, and any cosmetic blocks in the chamber are all unbreakable.
