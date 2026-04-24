@@ -385,7 +385,7 @@ tbody tr:nth-child(even) td { background: var(--paper); }
   background: var(--ink);
 }
 
-/* tweak flags inline */
+/* inline emphasis */
 .md-body strong {
   color: var(--ink);
 }

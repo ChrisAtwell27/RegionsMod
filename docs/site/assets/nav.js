@@ -1,4 +1,4 @@
-// Shared site header + footer injected on every page.
+﻿// Shared site header + footer injected on every page.
 (function () {
   const currentPath = location.pathname.replace(/\/$/, '').split('/').pop() || 'index.html';
   const currentDir = (() => {
@@ -37,11 +37,11 @@
     <div class="site-nav__inner">
       <a class="site-nav__brand" href="${up}index.html">
         ${logoHtml}
-        <span>RegionsMod</span>
+        <span>RegionsMOBA</span>
       </a>
       <div class="site-nav__links">
         ${navLinks.map(l => `<a href="${l.href}" class="${l.section === activeSection ? 'is-active' : ''}">${l.label}</a>`).join('')}
-        <a class="site-nav__ext" href="https://github.com/ChrisAtwell27/RegionsMod" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="site-nav__ext" href="https://github.com/ChrisAtwell27/RegionsMOBA" target="_blank" rel="noopener">GitHub ↗</a>
         <a class="site-nav__ext" href="https://discord.gg/yuJcaUNPpu" target="_blank" rel="noopener">Discord ↗</a>
       </div>
     </div>`;
@@ -55,14 +55,14 @@
       <div>
         <div style="display:flex;gap:10px;align-items:center;margin-bottom:8px;">
           ${logoHtml}
-          <strong style="font-family:var(--pixel);font-size:11px;">RegionsMod</strong>
+          <strong style="font-family:var(--pixel);font-size:11px;">RegionsMOBA</strong>
         </div>
         <small>Fabric minigame mod for Minecraft 1.21.11.<br/>Four asymmetric nations compete on a shared map.</small>
       </div>
       <div>
         <div class="chip no-dot" style="margin-bottom:10px;">Community</div>
         <div style="display:flex;gap:10px;flex-wrap:wrap;">
-          <a class="btn" href="https://github.com/ChrisAtwell27/RegionsMod" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn" href="https://github.com/ChrisAtwell27/RegionsMOBA" target="_blank" rel="noopener">GitHub ↗</a>
           <a class="btn btn--ocean" href="https://discord.gg/yuJcaUNPpu" target="_blank" rel="noopener">Discord ↗</a>
         </div>
       </div>
