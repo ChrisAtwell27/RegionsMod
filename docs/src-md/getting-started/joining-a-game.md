@@ -26,7 +26,7 @@ No biome can hold more than 1/4 of total players. Overflow is redistributed.
 ## Match start
 
 1. Teleport to team spawn.
-2. Pick one of 5 classes.
+2. Pick one of 6 classes.
 3. Timeline starts.
 
 You have 3 lives. At 0 lives, spectator mode for the rest of the match. Spectators can teleport to any living player.

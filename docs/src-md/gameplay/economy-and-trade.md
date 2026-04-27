@@ -19,6 +19,8 @@ Each biome has one trader. Right-click to open a trade menu.
 
 Traders are protected and cannot be killed.
 
+Map authors register a biome's trader with either `/regions spawntrader <biome>` (one-step: spawns the right entity for the biome at the operator's position and registers it) or `/regions settrader <biome>` (click-register an entity already in the world — useful if you want a custom-named trader or one with pre-set trades).
+
 ## Trade flow
 
 1. Plains converts crops to emeralds at the composter.

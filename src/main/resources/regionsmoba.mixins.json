@@ -3,7 +3,10 @@
 	"package": "com.regionsmoba.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"CropGrowthMixin",
+		"FurnaceAccessor",
+		"LevelSetBlockMixin",
+		"SignEditValidationMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
